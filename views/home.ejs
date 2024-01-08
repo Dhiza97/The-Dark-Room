@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+<div class="main-container">
+    <h1>Home</h1>
+    <p><%= startingContent %></p>
+
+    <% posts.forEach((post) => { %>
+        <div>
+            <h2><%= post.title %></h2>
+            <p>
+                <% if (post.content) { %>
+                    <%= post.content.substring(0, 100) + "..." %>
+                    <a style="color: rgb(90, 90, 254);" href="/posts/<%= encodeURIComponent(post.title) %>">Read More</a>
+                <% } else { %>
+                    No content available. <a style="color: blue;" href="/posts/<%= encodeURIComponent(post.title) %>">Edit</a>
+                <% } %>
+            </p>
+        </div>
+    <% }); %>
+</div>
+
+<%- include("partials/footer.ejs") %>

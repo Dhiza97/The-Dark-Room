@@ -1,0 +1,183 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    /* background: linear-gradient(-45deg, midnightblue, black, white);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; */
+    margin: 0;
+    overflow: hidden;
+    /* padding: 0;
+    height: 100vh; */
+}
+
+/* @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
+#myVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* Navigation Bar */
+nav {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin: 5px 0 0 20px;
+    color: midnightblue;
+}
+
+.logo span {
+    color: white;
+}
+
+.nav-items {
+    margin-right: 30px;
+}
+
+.nav-items a {
+    font-size: 1.1rem;
+    padding: 0 20px;
+}
+
+.nav-items a:hover {
+    color: midnightblue;
+}
+
+/* Body Container */
+.main-container {
+    margin: 0 200px;
+    height: 100vh;
+}
+
+/* Footer */
+footer {
+   text-align: center;
+   position: fixed;
+   bottom: -1%;
+   width: 100%;
+}
+
+/* Compose Page */
+.compose-container {
+    background: transparent;
+    border-radius: 15px;
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.compose-container h1 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.compose-container h1 span {
+    color: midnightblue;
+}
+
+.compose-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.compose-container label {
+    margin-left: 50px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.compose-container input {
+    font-size: 18px;
+    width: 700px;
+    height: 50px;
+    border: none;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.compose-container textarea {
+    display: block;
+    font-size: 18px;
+    width: 700px;
+    border: none;
+    margin: 0 auto;
+    border-radius: 10px;
+    outline: none;
+}
+
+.compose-container button[type=submit] {
+    border-radius: 10px;
+    font-size: 16px;
+    height: 35px;
+    width: 150px;
+    margin: 15px 0 10px 50px;
+    line-height: 100%;
+    letter-spacing: 2%;
+}
+
+.compose-container button:hover {
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+    transition: .5s;
+}
+
+/* View Post */
+.edit-btn, .delete-btn {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    height: 35px;
+    width: 100px;
+    margin: 15px 0 10px 50px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    border-radius: 10px;
+    border: none;
+    float: right;
+    transition: all 200ms ease-in;
+}
+
+.edit-btn:hover {
+    background-color: skyblue;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.delete-btn:hover  {
+    background-color: red;
+    cursor: pointer;
+    transition: .5s;
+}
